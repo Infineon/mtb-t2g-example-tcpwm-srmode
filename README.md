@@ -1,6 +1,6 @@
 <img src="./images/IFX_LOGO_600.gif" align="right" width="150"/>
 
-# TCPWM Shift Register Mode
+# TCPWM Shift Register mode
 
 **This code example demonstrates the delayed signal generation using Shift Register (SR) mode.**  
 
@@ -51,7 +51,7 @@ TRAVEO™ T2G platform supports the following TCPWM features:
 - Synchronous operation of multiple counters
 - Debug mode support
 
-More details can be found in [Technical Reference Manual (TRM)](https://www.infineon.com/dgdl/?fileId=5546d4627600a6bc017600bfae720007), [Registers TRM](https://www.infineon.com/dgdl/?fileId=5546d4627600a6bc017600be2aef0004) and [Data Sheet](https://www.infineon.com/dgdl/?fileId=5546d46275b79adb0175dc8387f93228).
+More details can be found in [Technical Reference Manual (TRM)](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-body/t2g-cyt4bf#documents), [Registers TRM](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-body/t2g-cyt4bf#documents) and [Data Sheet](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-body/t2g-cyt4bf#documents).
 
 ## Hardware setup
 
@@ -59,8 +59,6 @@ This CE has been developed for:
 - TRAVEO™ T2G Body High Lite evaluation kit ([KIT_T2G-B-H_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g-b-h_lite/))<BR>
 <img src="./images/KIT_T2G-B-H_LITE.gif"/><BR>
 No changes are required from the board's default settings.
-
-<a id="pins-list"></a>
 
 **Pins list**
 <table border="1" style="border-collapse: collapse">
@@ -82,7 +80,7 @@ The configuration is done in a custom design.modus file. This can be opened by D
 ![](images/tcpwm_sr_parameters.jpg)
 
 - The `Taps Enabled` value is set to 1 to make the line out as 16 cycles delay of the captured input signal.
-- The `Inputs/Serial Signal` and `Outputs/PWM (line)` are set to the kit specific [user button and user LED](#pins-list) respectively.
+- The `Inputs/Serial Signal` and `Outputs/PWM (line)` are set to the kit specific user button and user LED respectively. See the Pins list in Hardware setup
 
 **Initialize and enable the TCPWM**
 
@@ -102,17 +100,17 @@ After code compilation, perform the following steps to flashing the device:
     - In the **Quick Panel**, scroll down, and click **[Project Name] Program (KitProg3_MiniProg4)**.
 2. After programming, the code example starts automatically.
 3. Press USER_BTN1(USER1), then USER_LED3(LED5) lights up after approximately 0.5 seconds.
-4. You can debug the example to step through the code. In the IDE, use the **[Project Name] Debug (KitProg3_MiniProg4)** configuration in the **Quick Panel**. For details, see the "Program and debug" section in the [Eclipse IDE for ModusToolbox™ software user guide](https://www.cypress.com/MTBEclipseIDEUserGuide).
+4. You can debug the example to step through the code. In the IDE, use the **[Project Name] Debug (KitProg3_MiniProg4)** configuration in the **Quick Panel**. For details, see the "Program and debug" section in the [Eclipse IDE for ModusToolbox™ software user guide](https://www.infineon.com/MTBEclipseIDEUserguide).
 
-**Note:** **(Only while debugging)** On the CM7 CPU, some code in `main()` may execute before the debugger halts at the beginning of `main()`. This means that some code executes twice - once before the debugger stops execution, and again after the debugger resets the program counter to the beginning of `main()`. See [KBA231071](https://community.cypress.com/docs/DOC-21143) to learn about this and for the workaround.
+**Note:** **(Only while debugging)** On the CM7 CPU, some code in `main()` may execute before the debugger halts at the beginning of `main()`. This means that some code executes twice ? once before the debugger stops execution, and again after the debugger resets the program counter to the beginning of `main()`. See [KBA231071](https://community.cypress.com/docs/DOC-21143) to learn about this and for the workaround.
 
 
 ## References  
 
 Relevant Application notes are:
-- AN235305 - GETTING STARTED WITH TRAVEO™ T2G FAMILY MCUS IN MODUSTOOLBOX™
-- [AN224434](https://www.infineon.com/dgdl/?fileId=8ac78c8c7cdc391c017d0d3a71ec674a) - Clock configuration setup in TRAVEO™ T2G family CYT4B series
-- [AN220224](https://www.infineon.com/dgdl/?fileId=8ac78c8c7cdc391c017d0d3a800a6752) - How to Use Timer, Counter, and PWM (TCPWM) in Traveo II Family
+- [AN235305](https://www.infineon.com/gated/infineon-an235305-getting-started-with-traveo-t2g-family-mcus-in-modustoolbox-applicationnotes-en_ef8d5799-c199-4f23-83a2-4fd63183071f) - GETTING STARTED WITH TRAVEO™ T2G FAMILY MCUS IN MODUSTOOLBOX™
+- [AN224434](https://www.infineon.com/gated/infineon-an224434-clock-configuration-setup-in-traveo-t2g-body-high-family-applicationnotes-en_80cf38a4-3eb2-43d9-b7fb-8ec94120dfd2) - Clock configuration setup in TRAVEO™ T2G family CYT4B series
+- [AN220224](https://www.infineon.com/gated/infineon-an220224---how-to-use-timer-counter-and-pwm-tcpwm-in-traveo-t2g-family-ja-applicationnotes-ja_8c2c5500-27ae-4f7f-9677-f6b10f19328d) - How to Use Timer, Counter, and PWM (TCPWM) in Traveo II Family
 
 ModusToolbox™ is available online:
 - <https://www.infineon.com/modustoolbox>
@@ -124,7 +122,7 @@ More code examples can be found on the GIT repository:
 - [TRAVEO™ T2G Code examples](https://github.com/orgs/Infineon/repositories?q=mtb-t2g-&type=all&language=&sort=)
 
 For additional trainings, visit our webpage:  
-- [TRAVEO™ T2G trainings](https://www.infineon.com/cms/en/product/microcontroller/32-bit-traveo-t2g-arm-cortex-microcontroller/32-bit-traveo-t2g-arm-cortex-for-body/traveo-t2g-cyt4bf-series/#!trainings)
+- [TRAVEO™ T2G trainings](https://www.infineon.com/training/microcontroller-trainings)
 
 For questions and support, use the TRAVEO™ T2G Forum:  
 - <https://community.infineon.com/t5/TRAVEO-T2G/bd-p/TraveoII>  
