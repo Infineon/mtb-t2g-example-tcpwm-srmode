@@ -4,6 +4,14 @@
 
 **This code example demonstrates the delayed signal generation using Shift Register (SR) mode.**  
 
+## Requirements
+
+- [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.0 or later (tested with v3.0)
+
+## Supported toolchains (make variable 'TOOLCHAIN')
+
+- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) – Default value of `TOOLCHAIN`
+
 ## Device
 
 The device used in this code example (CE) is:
@@ -12,7 +20,7 @@ The device used in this code example (CE) is:
 ## Board
 
 The board used for testing is:
-- TRAVEO™ T2G evaluation kit ([KIT_T2G-B-H_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g-b-h_lite/))
+- TRAVEO™ T2G evaluation kit ([KIT_T2G-B-H_LITE](https://www.infineon.com/evaluation-board/KIT-T2G-B-H-LITE))
 
 ## Scope of work
 
@@ -51,12 +59,12 @@ TRAVEO™ T2G platform supports the following TCPWM features:
 - Synchronous operation of multiple counters
 - Debug mode support
 
-More details can be found in [Technical Reference Manual (TRM)](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-body/t2g-cyt4bf#documents), [Registers TRM](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-body/t2g-cyt4bf#documents) and [Data Sheet](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-body/t2g-cyt4bf#documents).
+More details of TRAVEO™ T2G CYT4BF Series can be found in Technical Reference Manual (TRM), Registers TRM and Data Sheet. (See the [here](https://www.infineon.com/products/microcontroller/32-bit-traveo-t2g-arm-cortex/for-body/t2g-cyt4bf#documents))
 
 ## Hardware setup
 
 This CE has been developed for:
-- TRAVEO™ T2G Body High Lite evaluation kit ([KIT_T2G-B-H_LITE](https://www.infineon.com/cms/en/product/evaluation-boards/kit_t2g-b-h_lite/))<BR>
+- TRAVEO™ T2G Body High Lite evaluation kit ([KIT_T2G-B-H_LITE](https://www.infineon.com/evaluation-board/KIT-T2G-B-H-LITE))<BR>
 <img src="./images/KIT_T2G-B-H_LITE.gif"/><BR>
 No changes are required from the board's default settings.
 
@@ -108,9 +116,9 @@ After code compilation, perform the following steps to flashing the device:
 ## References  
 
 Relevant Application notes are:
-- [AN235305](https://www.infineon.com/gated/infineon-an235305-getting-started-with-traveo-t2g-family-mcus-in-modustoolbox-applicationnotes-en_ef8d5799-c199-4f23-83a2-4fd63183071f) - GETTING STARTED WITH TRAVEO™ T2G FAMILY MCUS IN MODUSTOOLBOX™
-- [AN224434](https://www.infineon.com/gated/infineon-an224434-clock-configuration-setup-in-traveo-t2g-body-high-family-applicationnotes-en_80cf38a4-3eb2-43d9-b7fb-8ec94120dfd2) - Clock configuration setup in TRAVEO™ T2G family CYT4B series
-- [AN220224](https://www.infineon.com/gated/infineon-an220224---how-to-use-timer-counter-and-pwm-tcpwm-in-traveo-t2g-family-ja-applicationnotes-ja_8c2c5500-27ae-4f7f-9677-f6b10f19328d) - How to Use Timer, Counter, and PWM (TCPWM) in Traveo II Family
+- [AN235305](https://www.infineon.com/assets/row/public/documents/10/42/infineon-an235305-getting-started-with-traveo-t2g-family-mcus-in-modustoolbox-applicationnotes-en.pdf?fileId=8ac78c8c8b6555fe018c1fddd8a72801) - GETTING STARTED WITH TRAVEO™ T2G FAMILY MCUS IN MODUSTOOLBOX™
+- [AN224434](https://www.infineon.com/gated/infineon-an224434-clock-configuration-setup-in-traveo-t2g-body-high-family-applicationnotes-en_80cf38a4-3eb2-43d9-b7fb-8ec94120dfd2) - CLOCK CONFIGURATION SETUP IN TRAVEO™ T2G BODY HIGH FAMILY
+- [AN220224](https://www.infineon.com/row/public/documents/10/42/infineon-an220224---how-to-use-timer-counter-and-pwm-tcpwm-in-traveo-t2g-family-applicationnotes-en.pdf) - How to Use Timer, Counter, and PWM (TCPWM) in Traveo II Family
 
 ModusToolbox™ is available online:
 - <https://www.infineon.com/modustoolbox>
@@ -119,7 +127,7 @@ Associated TRAVEO™ T2G MCUs can be found on:
 - <https://www.infineon.com/cms/en/product/microcontroller/32-bit-traveo-t2g-arm-cortex-microcontroller/>
 
 More code examples can be found on the GIT repository:
-- [TRAVEO™ T2G Code examples](https://github.com/orgs/Infineon/repositories?q=mtb-t2g-&type=all&language=&sort=)
+- [TRAVEO™ T2G Code examples](https://github.com/orgs/Infineon/repositories?q=topic%3Akit-t2g-b-h-lite&type=all&language=&sort=) for [KIT_T2G-B-H_LITE](https://www.infineon.com/evaluation-board/KIT-T2G-B-H-LITE)
 
 For additional trainings, visit our webpage:  
 - [TRAVEO™ T2G trainings](https://www.infineon.com/training/microcontroller-trainings)
